@@ -10,7 +10,7 @@ import { MapPin, ShoppingCart } from 'phosphor-react'
 export function Header() {
   return (
     <HeaderContainer>
-      <div>
+      <div className="container">
         <img src={coffeeLogoImg} alt="" />
 
         <HeaderButtonsContainer>
