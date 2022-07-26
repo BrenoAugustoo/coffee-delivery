@@ -42,6 +42,7 @@ const BaseButton = styled.button`
 export const LocationButton = styled(BaseButton)`
   background: ${({ theme }) => theme.colors['brand-purple-light']};
   color: ${({ theme }) => theme.colors['brand-purple-dark']};
+  cursor: inherit;
 
   svg {
     color: ${({ theme }) => theme.colors['brand-purple']};
@@ -51,4 +52,21 @@ export const LocationButton = styled(BaseButton)`
 export const CartButton = styled(BaseButton)`
   background: ${({ theme }) => theme.colors['brand-yellow-light']};
   color: ${({ theme }) => theme.colors['brand-yellow-dark']};
+
+  span {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    top: calc(-1.25rem / 2);
+    right: calc(-1.25rem / 2);
+    color: ${({ theme }) => theme.colors['base-white']};
+    background: ${({ theme }) => theme.colors['brand-yellow-dark']};
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
 `
