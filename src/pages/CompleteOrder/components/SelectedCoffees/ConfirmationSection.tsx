@@ -37,6 +37,7 @@ export function ConfirmationSection() {
         className="button-margin"
         text="confirmar pedido"
         disabled={cartQuantity <= 0}
+        type="submit"
       />
     </ConfirmationSectionContainer>
   )
